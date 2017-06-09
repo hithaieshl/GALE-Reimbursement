@@ -1,0 +1,112 @@
+$imagePath : '../../node_modules/unchained-ui-react/src/styles/themes/default/assets/images' !default;
+$fontPath  : '../../node_modules/unchained-ui-react/src/styles/themes/default/assets/fonts' !default;
+
+// =============== Column Count ===============
+
+$columnCount: 12;
+
+// =============== Colors ==============
+
+$primaryColor: #ee2f63;
+$secondaryColor: #fff;
+$textColor: #222;
+$LightDarkBackgroundColor: #454357;
+$DarkBackgroundColor: #373649;
+$CommercePageBg: rgba(0, 0, 0, 0.03);
+$GreyBg: #ececec;
+$DarkGreen: #919a38;
+$lightGreen: #a5b03e;
+$CardOverlay: rgba(255, 255, 255, 0.8);
+$InputColor: #717171;
+$BorderGrey: #dcdcdc;
+$ErrorColor: #fd0000;
+
+// =============== Fonts Family =============
+
+$fontName: 'Fira Sans', sans-serif;
+$googleFontSizes   : '300,400,500,700,' !default;
+$fontName2: 'Bitter', serif;
+
+// ============== Font Weight ===============
+
+$FiraSansLight: 300;
+$FiraSansRegular: 400;
+$FiraSansMedium: 500;
+$FiraSansBold: 700;
+
+$BitterRegular: 400;
+$BitterBold: 700;
+
+// ============== Segment Variables ================
+
+$segmentBorder: 0;
+$segmentBoxShadow: none;
+$segmentBorderRadius: 0;
+
+// =============== Container Variables ================
+
+$containerMobileWidth: 100%;
+$containerTabletWidth: 100%;
+$containerComputerWidth: 100%;
+$containerLargeMonitorWidth: 100%;
+$containerTextWidth: 880px !important;
+
+// =============== Primary and Seconday Buttons =============
+
+// Primary Buttons Variables
+$primaryColorHover: $primaryColor;
+$primaryColorFocus: $primaryColor;
+$buttonPrimaryTextColor: $secondaryColor;
+
+//  Common Variables for Button
+$buttonColoredBoxShadow: 0 12px 17px 0 rgba(0, 0, 0, 0.1);
+$buttonBorderRadius: 100px;
+$buttonFontWeight: $FiraSansMedium;
+
+// Secondary Buttons Variables
+$secondaryColorHover: $secondaryColor;
+$secondaryColorFocus: $secondaryColor;
+$buttonSecondaryTextColor: $DarkGreen;
+
+
+// ================ Select and DropDown Variables ==============
+
+$dropdownSelectionMinWidth: auto;
+$dropdownBorderRadius: 5px;
+$dropdownMenuBorderColor: #707070;
+$dropdownSelectionTextColor: $textColor;
+$dropdownDefaultTextColor: $dropdownSelectionTextColor;
+$dropdownSelectionVisibleBorderColor: $dropdownDefaultTextColor;
+$dropdownSelectionActiveHoverBorderColor: $dropdownDefaultTextColor;
+$dropdownSelectionActiveFocusBorderColor: $dropdownDefaultTextColor;
+$dropdownSelectionFocusBorderColor: $dropdownDefaultTextColor;
+
+// ================ SideBar Variables =============
+
+$sidebarWideWidth: 400px;
+
+// =============== Card Variables =============
+
+$cardBorderRadius: 0;
+$cardBorderShadow: none;
+
+// =============== Modal Variables =============
+
+$modalBorderRadius: 0;
+$modalBoxShadow: none;
+$modalContentBackground: $DarkBackgroundColor;
+
+// =============== Button Variables =============
+
+$transformScale: scale(1.03);
+
+// =============== Sidebar variables =============
+
+$sidebarBoxShadow: 0 0 5px rgba(34, 36, 38, 0.15);
+
+// =============== iPad landscape width =============
+
+$tabletLandscapeScreen: 1024px;
+
+
+
