@@ -1,81 +1,150 @@
-[![GitHub tag](https://img.shields.io/github/tag/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/tags)
-[![GitHub contributors](https://img.shields.io/github/contributors/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/contributors)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/mcnamee/react-native-starter-app/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/issues-closed)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/mcnamee/react-native-starter-app.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-app/issues-pr)
+Hain SunSpire UI
+=================
+
+This repository holds the code for Hain SunSpire UI project - powered by Unchained v5.
 
 
-[![Build Status](https://travis-ci.org/mcnamee/react-native-starter-app.svg?branch=master)](https://travis-ci.org/mcnamee/react-native-starter-app)
-[![Coverage Status](https://coveralls.io/repos/github/mcnamee/react-native-starter-app/badge.svg?branch=master)](https://coveralls.io/github/mcnamee/react-native-starter-app?branch=master)
+Deployed Instances
+------------------
 
-![alt text](/docs/rnsk-logo.jpg "React Native Starter Kit")
 
-# React Native Starter Kit
+|    DEV    |     QA    |    UAT    |   MASTER   |
+|-----------|-----------|-----------|------------|
+| [![Build Status](http://ci.hain.gale43labs.com/buildStatus/icon?job=Hain%20-%20SunSpire%20-%20UI/develop)](http://ci.hain.gale43labs.com/job/Hain%20-%20SunSpire%20-%20UI/job/develop/) | Not Setup | Not Setup | Not Setup |
 
-React Native Starter Kit helps you get started with React Native. It contains a bunch of helpful components, building blocks and basic structure to allow you to jump straight into building an app.
 
-![alt text](/docs/rnsk-screens.jpg "React Native Starter App")
+|  ENV     |     Front End    |    CMS    |
+|----------|------------------|-----------|
+|  DEV     |  https://hain-sunspire-ui-dev.galepartners.com |  https://hain-sunspire-ui-cms-dev.galepartners.com |
+|  QA      |  NOT SETUP |  NOT SETUP |
+|  UAT     |  NOT SETUP |  NOT SETUP |
+|  MASTER  |  NOT SETUP |  NOT SETUP |
 
----
+## Environment Passwords:
 
-## Docs
+### htpasswd authentication
+  Username : ``sunspire@gale43labs.com``
 
-1. [Features](#features)
-1. **Before you start**
-   1. [Getting Started with React Native](/docs/react-native.md)
-   1. [React Native Quick Tips](/docs/quick-tips.md)
-   1. [Understanding the File Structure](#understanding-the-file-structure)
-   1. [Opinions Guiding this Project](/docs/opinions.md)
-1. **Using RNSK**
-   1. [Getting Up and Running with RNSK](#getting-started)
-   1. [Renaming the App from StarterKit](/docs/renaming.md)
-   1. [Routing / Navigating](/src/navigation/README.md)
-   1. [Using Google Analytics](/docs/google-analytics.md)
-   1. [Interacting with a REST API](/docs/api.md)
-   1. [Testing](/docs/testing.md)
-1. [Contributing](/docs/contributing.md)
-1. [Licence](LICENSE)
+  Password : ``GALE+sunspire+unchained``
 
----
+### For the CMS
 
-## Features
+  Username : `admin@example.com`
 
-| Feature | Summary |
-| --- | --- |
-| [Redux](https://github.com/reactjs/react-redux) | A predictable state container - Helping you write applications that behave consistently and run in different environments. |
-| [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) | Router for React Native based on new React Native Navigation API. <br><br>['How to' Guide &rarr;](/src/navigation/README.md)|
-| [API Example](/docs/api.md) | A basic example showing how you can interact with a RESTful API with user authentication (JWT). |
-| [Sidebar / Hamburger Menu](https://github.com/react-native-community/react-native-side-menu) | ... |
-| [React Native Elements](https://github.com/react-native-community/react-native-elements) | Cross Platform React Native UI Toolkit. |
-| [Google Analytics](https://github.com/idehub/react-native-google-analytics-bridge) | Shows how to track screen views (includes both a 'debug' mode tracker as well as 'release' mode so that data doesn't get obfuscated). <br><br>[Setup Guide &rarr;](/docs/google-analytics.md) |
-| [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) | Easily use icons from a wide range of icon libraries, it's as simple as importing the icon font and then `<Icon name={'ios-alert-outline'} size={50} color={"#CCC"} />`. |
-| [Tcomb Form Validation](https://github.com/gcanti/tcomb-form-native) | An example on how to create forms with validation. |
-| Component Style Guide | A bunch of elements and components to get you started - styled headings, buttons, list rows, alerts etc. |
-| Code Linting / Code Style Guide | We're using [Airbnb's](https://github.com/airbnb/javascript) JS/React Style Guide with ESLint linting. <br><br>[Get started with linting for React Native &rarr;](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694) |
-| Boilerplate | An example directory/file structure I've found useful for scaling apps <br><br>[Learn more &rarr;](#understanding-the-file-structure) |
+  Password : `test123`
 
----
+## First time Installation Instructions
 
-## Getting Started
 
-1. Ensure you've followed the [React Native - Get Started Guide](https://facebook.github.io/react-native/docs/getting-started.html) for the platform/s of choice
-1. Clone this project `git clone https://github.com/mcnamee/react-native-starter-app.git`
-1. Run `npm install` from root directory
-1. Start the app in [an emulator](/docs/quick-tips.md#running-in-an-emulator)
+1. Fork and clone this repository, and cd into this repository folder.
 
----
+2. Make sure to clear any existing vagrant setup
 
-## Understanding the File Structure
+  ```
+  vagrant destroy
+  ```
 
-- `/android` - The native Android stuff
-- `/ios` - The native iOS stuff
-- `/src` - Contains the full React Native App codebase
-  - `/components` - 'Dumb-components' / presentational. [Read More &rarr;](/src/components/README.md)
-  - `/constants` - App-wide variables and config
-  - `/containers` - 'Smart-components' / the business logic. [Read More &rarr;](/src/containers/README.md)
-  - `/images` - Self explanatory right?
-  - `/lib` - Utils, custom libraries, functions
-  - `/navigation`- Routes - wire up the router with any & all screens. [Read More &rarr;](/src/navigation/README.md)
-  - `/redux` - Redux Reducers & Actions grouped by type. [Read More &rarr;](/src/redux/README.md)
-  - `/theme` - Theme specific styles and variables
+3. Run
+
+    ```
+    cp server/config/settings/.env.example server/config/settings/.env
+    vagrant up
+    ```
+
+    Note: The copy command copies a set of environment variables. This should work out of box with our setup.
+
+4. Run the following commands:
+
+    ```
+    vagrant ssh
+    ```
+
+5. Create a new Private/Public SSH key inside your vagant box.
+
+    ```
+    ssh-keygen -t rsa -b 2048
+    ```
+
+    Note: Please do not enter any password. Hit enter without entering any data for all three prompts.
+
+6. Copy your public key, by copying the output of the below command
+
+    ```
+    cat ~/.ssh/id_rsa.pub
+    ```
+
+7. Add this public key to your GitHub profile. Refer [here](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) for instructions on how to add it to your GitHub profile (you can ignore the copy step, since we have already copied).
+
+8. Execute this command next:
+
+    ```
+    ssh-keyscan github.com >> ~/.ssh/known_hosts
+    ```
+
+9. Execute the below commands to set everything up
+
+    ```
+    cd /home/vagrant/project
+    docker-compose up -d database
+    docker-compose down
+    docker-compose up -d
+    docker-compose exec app pip install -r server/requirements/dev.txt
+    docker-compose exec app python server/manage.py migrate
+    docker-compose restart app
+    docker-compose exec app python server/manage.py createsuperuser
+    ```
+
+## To build JS and CSS
+
+Execute the following commands in your hosts Terminal (not vagrant) from the project folder
+```
+yarn install
+npm start
+```
+
+## To start the Django server
+
+1. Get inside Vagrant:
+
+    ```
+    vagrant ssh
+    ```
+    
+2. Execute the following commands:
+
+    ```
+    cd /home/vagrant/project
+    docker-compose up -d
+    docker-compose exec app python server/manage.py runserver 0:8000
+    ```
+    This builds the search index and starts the server
+
+3. Navigate to [http://localhost:8000/cms](http://localhost:8000/cms) on your local browser.
+
+
+## Restoring from a database backup and media backup
+
+1. Get inside Vagrant
+
+    ```
+    vagrant ssh
+    ```
+
+2. Execute a script to download and install DB and Media dump
+
+    ```
+    cd /home/vagrant/project
+    bash .build/syncQA.sh
+    ```
+## Clearing the project Solidus cache
+
+1. Go to the following URL on QA
+
+    ```
+    /unchained/ecommerce/api/v1/clear-cache/
+    ```
+2. Go to the following URL on local
+
+    ```
+    https://localhost:8000/unchained/ecommerce/api/v1/clear-cache/
+    ```
